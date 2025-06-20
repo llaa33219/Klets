@@ -1,0 +1,262 @@
+/* 내 채팅 메시지 스타일 (span 요소용) */
+.my-chat {
+  background-color: rgb(231, 251, 246) !important;
+}
+
+/* 답글 버튼 스타일 */
+.reply-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: #2196f3;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  margin-left: 6px;
+  font-size: 10px;
+  vertical-align: top;
+  transform: translateY(50%);
+}
+
+.reply-button:hover {
+  background: #1976d2;
+}
+
+.chat-message-container {
+  position: relative;
+}
+
+.chat-message-container:hover .reply-button {
+  opacity: 1;
+}
+
+.reply-ui {
+  position: relative;
+  background: #f5f5f5;
+  border: none;
+  padding: 8px 12px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reply-ui-content {
+  flex: 1;
+}
+
+.reply-ui-close {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #999;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.reply-ui-close:hover {
+  color: #333;
+}
+
+.reply-target-user {
+  font-weight: bold;
+  color: #2196f3;
+}
+
+.reply-target-message {
+  font-weight: bold;
+  color: #333;
+}
+
+/* textarea 답장 텍스트 숨김 */
+.textarea-container {
+  position: relative;
+  overflow: hidden;
+}
+
+textarea#Message.reply-mode {
+  transform: translateY(-1.1em);
+}
+
+/* 답장 표기 스타일 */
+.reply-indicator {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 0px;
+  padding: 8px 10px;
+  font-size: 12px;
+  background: #eee;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 1px 3px rgba(33, 150, 243, 0.1);
+  box-sizing: border-box;
+}
+
+/* 답장된 메시지 스타일 */
+span.reply-processed {
+  border-radius: 0 0 20px 20px !important;
+}
+
+.reply-badge {
+  display: inline-block;
+  background: #2196f3;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1.2;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.reply-info {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.3;
+}
+
+.reply-target-user {
+  display: inline;
+  font-weight: bold;
+  color: #2196f3;
+}
+
+.reply-target-message {
+  display: inline;
+  color: #888;
+}
+
+/* 이미지 ASCII 버튼 스타일 */
+.image-ascii-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #bcbcbc;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.image-ascii-button:active {
+  transform: translateY(0);
+  background: #bcbcbc;
+}
+
+.image-ascii-button svg {
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+/* 대상 요소에 flex 속성 추가하여 버튼이 옆에 나타나도록 */
+div.css-15ws93w.eeo291g1 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0 !important;
+}
+
+/* 리사이즈 가능한 드래그 컴포넌트 스타일 */
+.resizable-draggable-enhanced {
+  position: relative;
+  min-width: 200px !important;
+  min-height: 200px !important;
+  /* 기존 사이트 기본 스타일 유지 */
+}
+
+/* 더 구체적인 셀렉터로 최소 크기만 설정 */
+div.react-draggable.css-e7o6ze.resizable-draggable-enhanced {
+  min-width: 200px !important;
+  min-height: 200px !important;
+  /* 기본 width: 374px, height: 100%, max-height: calc(10% - 138px) 유지 */
+}
+
+/* 모든 가능한 조합에 대해 최소 크기만 오버라이드 */
+.react-draggable.react-draggable-dragged.css-e7o6ze.ea1elk90.resizable-draggable-enhanced {
+  min-width: 200px !important;
+  min-height: 200px !important;
+  /* 기본 사이트 스타일 유지 */
+}
+
+.resize-handle {
+  opacity: 0;
+  background: transparent !important;
+  border-radius: 2px;
+  pointer-events: auto;
+}
+
+/* 리사이즈 핸들 모양 설정 (시각적 표시 없음) */
+.resize-handle.resize-top,
+.resize-handle.resize-bottom,
+.resize-handle.resize-left,
+.resize-handle.resize-right,
+.resize-handle.resize-top-left,
+.resize-handle.resize-top-right,
+.resize-handle.resize-bottom-left,
+.resize-handle.resize-bottom-right {
+  background: transparent !important;
+}
+
+/* 드래그 시 선택 방지 */
+.resizable-draggable-enhanced * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 투명도 기능 관련 스타일 */
+.transparency-checkbox-container {
+  position: absolute;
+  right: 160px;
+  top: 0px;
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 3px;
+  margin: 0;
+  font-size: 10px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.transparency-checkbox-container input[type="checkbox"] {
+  margin-right: 4px;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.transparency-checkbox-container label {
+  cursor: pointer;
+  color: #666;
+  font-weight: 400;
+  transition: color 0.2s ease;
+  font-size: 11px;
+}
+
+/* 투명 상태 클래스 */
+.chat-transparent {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+
+
