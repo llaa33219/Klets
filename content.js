@@ -140,7 +140,7 @@ class ChatExtension {
         }
       }
       // 채팅 div 확인
-      else if (element.classList.contains('css-xaxbcx') && element.classList.contains('e4nn04i2')) {
+      else if (element.classList.contains('css-qjh7qy') && element.classList.contains('e4nn04i2')) {
         // 채팅 메시지 안의 span 찾기
         const messageSpan = element.querySelector('p.message span');
         
@@ -289,7 +289,7 @@ class ChatExtension {
                  }
                }
                                                             // 채팅 메시지가 추가되었는지 확인
-               else if (node.matches && node.matches('div.css-xaxbcx.e4nn04i2')) {
+               else if (node.matches && node.matches('div.css-qjh7qy.e4nn04i2')) {
                  // 부모 컨테이너 찾아서 처리
                  const container = node.closest('div[opacity="0.25"].css-1ad1slj.e4nn04i0');
                  if (container) {
@@ -426,7 +426,7 @@ class ChatExtension {
         }
       }
       // 채팅 div 확인
-      else if (element.classList.contains('css-xaxbcx') && element.classList.contains('e4nn04i2')) {
+      else if (element.classList.contains('css-qjh7qy') && element.classList.contains('e4nn04i2')) {
         // 내 메시지가 아닌 경우에만 답글 버튼 추가
         if (currentAvatarSrc && currentAvatarSrc !== this.myAvatarSrc && currentUser) {
           this.addReplyButtonToMessage(element, currentUser, currentAvatarSrc);
@@ -847,7 +847,7 @@ class ChatExtension {
         }
       }
       // 채팅 div 확인
-      else if (element.classList.contains('css-xaxbcx') && element.classList.contains('e4nn04i2')) {
+      else if (element.classList.contains('css-qjh7qy') && element.classList.contains('e4nn04i2')) {
         // 내 메시지인지 확인
         if (currentAvatarSrc === this.myAvatarSrc) {
           const messageSpan = element.querySelector('p.message span');

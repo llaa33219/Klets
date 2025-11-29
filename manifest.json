@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "엔트리-Klets",
-  "version": "1.0",
+  "version": "1.1",
   "description": "탐험하기 채팅에 유용한 기능을 추가해줍니다.",
   "permissions": [
     "activeTab"
